@@ -1,0 +1,12 @@
+{
+  "itemGroup.chabs_immersivecasting": "Casting Wands",
+  "item.chabs_immersivecasting.casting_wand": "Casting Wand",
+  "item.chabs_immersivecasting.casting_wand_red": "Casting Wand",
+  "item.chabs_immersivecasting.casting_wand_blue": "Casting Wand",
+  "item.chabs_immersivecasting.casting_wand_purple": "Casting Wand",
+  "item.chabs_immersivecasting.casting_wand_yellow": "Casting Wand",
+
+  "chabs_immersivecasting.configuration.title": "Immersive Casting - Addon for Ars Nouveau Configs",
+  "chabs_immersivecasting.configuration.section.chabs_immersivecasting.common.toml": "Immersive Casting - Addon for Ars Nouveau Configs",
+  "chabs_immersivecasting.configuration.section.chabs_immersivecasting.common.toml.title": "Immersive Casting - Addon for Ars Nouveau Configs"
+}

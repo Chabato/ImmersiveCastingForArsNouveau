@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.chabato.immersive_casting.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SpeechRecognizerMixin"
+  ],
+  "client": [
+    "VoiceLibClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

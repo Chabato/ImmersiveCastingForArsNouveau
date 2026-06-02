@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "chabs_immersivecasting:item/casting_wand_purple"
+  }
+}
