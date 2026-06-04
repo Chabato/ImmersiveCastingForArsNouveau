@@ -43,8 +43,6 @@ public class SpeechRecognizerMixin {
             str = str.replace("_"," ");
             grammar += "\"" + str + "\", ";
         }
-
-        grammar += "\"eruption\", \"forward\", \"aquarium\", \"gravitas\", \"butterfly\", \"bind\",";
         grammar += "\"[unk]\"]";
         return grammar;
     }

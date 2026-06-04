@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class SpellCast {
     public static void castPB(Player player, String str) {
@@ -96,13 +97,19 @@ public class SpellCast {
             return list;
         }
 
-        ResourceLocation id = ResourceLocation.tryParse("ars_nouveau:glyph_" + str.toLowerCase());
-        if(id == null) {
-            list.add(null);
-            return list;
-        } else {
-            list.add(GlyphRegistry.getSpellPart(id));
-            return list;
+        //ResourceLocation id = ResourceLocation.tryParse("ars_nouveau:glyph_" + str.toLowerCase());
+
+        Map<ResourceLocation,AbstractSpellPart> map = GlyphRegistry.getSpellpartMap();
+        List<AbstractSpellPart> spelllist = new ArrayList<>(map.values());
+        for(AbstractSpellPart spellPart : spelllist){
+            String name = spellPart.getRegistryName().getPath();
+            name = name.replace("glyph_", "");
+            if(str.equals(name)){
+                list.add(spellPart);
+                return list;
+            }
         }
+
+        return list;
     }
 }
