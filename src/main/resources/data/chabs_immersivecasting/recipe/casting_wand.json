@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " BA",
+    " BB",
+    "B  "
+  ],
+  "key": {
+    "A": { "item": "minecraft:amethyst_shard" },
+    "B": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "chabs_immersivecasting:casting_wand_purple",
+    "count": 1
+  }
+}

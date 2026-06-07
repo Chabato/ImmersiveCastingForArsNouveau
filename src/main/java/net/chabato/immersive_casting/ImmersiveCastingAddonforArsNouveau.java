@@ -2,6 +2,7 @@ package net.chabato.immersive_casting;
 
 import net.chabato.immersive_casting.CustomSpells.CustomSpellLoader;
 import net.chabato.immersive_casting.items.CastingWand;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,9 +42,9 @@ public class ImmersiveCastingAddonforArsNouveau {
     public static final DeferredItem<Item> CASTING_WAND_YELLOW = ITEMS.registerItem("casting_wand_yellow", props -> new CastingWand(props.stacksTo(1)));
 
     // Creates a creative tab with the id "chabs_immersivecasting:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("casting_wand", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> IMMERSIVE_CASTING_TAB = CREATIVE_MODE_TABS.register("casting_wand", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.chabs_immersivecasting")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .withTabsBefore(ResourceLocation.parse("ars_nouveau:glyphs"))
             .icon(() -> CASTING_WAND_PURPLE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(CASTING_WAND.get());
